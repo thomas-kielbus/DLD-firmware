@@ -6,7 +6,13 @@ This firmware is identical to the official v5 firmware provided by 4ms, with the
 
 For example, if you patch a low-pass filter in the send->return path, the dry sound will not go through the filter, the first echo will go through the filter once, the second echo will go through the filter twice, and so on.
 
-__Important:__ you must always patch something from send to return for a given channel for it to work as expected. If send->return is left unpatched, no wet sound will be output. This is because all incoming audio and feedback is sent to the send output, and that the return input is used directly to write to the looping delay memory. If you do not want any effect inserted in the delay audio and feedback path, simply patch a cable directly from send to return.
+# Caveats
+
+- __Important:__ you must always patch something from send to return for a given channel for it to work as expected. If send->return is left unpatched, no wet sound will be output. This is because all incoming audio and feedback is sent to the send output, and that the return input is used directly to write to the looping delay memory. If you do not want any effect inserted in the delay audio and feedback path, simply patch a cable directly from send to return.
+
+- Having the send->return path before the looping delay memory modifies the DLD audio topology. Some patches that are possible with the original firmware are not possible anymore, for example patches with two feedback loops across both channels.
+
+- This is not a system setting, but a new default. If you wish to go back to the original behavior, you must install the original firmware.
 
 # Installation
 
