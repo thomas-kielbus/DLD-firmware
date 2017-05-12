@@ -6,7 +6,7 @@ This firmware is identical to the official v5 firmware provided by 4ms, with the
 
 For example, if you patch a low-pass filter in the send->return path, the dry sound will not go through the filter, the first echo will go through the filter once, the second echo will go through the filter twice, and so on.
 
-Note that you must always patch something from send to return for a given channel for it to work as expected. If send->return is left unpatched, nothing will be output. This is because all incoming audio and feedback is sent to the send output, and that the return input is used directly to write to the looping delay memory. If you do not want any effect inserted in the delay audio and feedback path, simply patch a cable straight from send to return.
+Note that you must always patch something from send to return for a given channel for it to work as expected. If send->return is left unpatched, nothing will be output. This is because all incoming audio and feedback is sent to the send output, and that the return input is used directly to write to the looping delay memory. If you do not want any effect inserted in the delay audio and feedback path, simply patch a cable directly from send to return.
 
 # Installation
 
