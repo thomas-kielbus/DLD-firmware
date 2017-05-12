@@ -1,6 +1,6 @@
 # DLD firmware v5 with send/return pre-delay
 
-DLD firmware v5 with send/return pre-delay is a modest alternative firmware for the [Dual Looping Delay (DLD) eurorack module by 4ms](http://www.4mscompany.com/dld.php), based on the [original open source firmware](http://github.com/4ms/DLD).
+DLD firmware v5 with send/return pre-delay is a modest alternative firmware for the [Dual Looping Delay (DLD) eurorack module by 4ms](http://www.4mscompany.com/dld.php), based on the [original open-source firmware](http://github.com/4ms/DLD).
 
 This firmware is identical to the official v5 firmware provided by 4ms, with the exception that each channel's audio is forced through its correponding send->return path before being written to the looping delay memory. This means that audio sent to the input of a given channel goes through the send->return path once before being delayed, and then again on each subsequent feedback loop of the delay.
 
