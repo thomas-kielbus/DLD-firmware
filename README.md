@@ -12,7 +12,7 @@ Turning on this behavior means that audio sent to the input of a given channel g
 
 - __Important:__ you must always patch something from send to return for a given channel for it to work as expected when the send/return before loop mode is enabled. If send/return is left unpatched, no wet sound will be output. This is because all incoming audio and feedback is sent to the send output, and that the return input is used directly to write to the looping delay memory. If you do not want any effect inserted in the delay audio and feedback path, simply patch a cable directly from send to return.
 
-- Having the send/return path before the looping delay memory modifies the audio topology of that channel. Some patches that are possible with the original firmware are not possible anymore, for example patches with two feedback loops using send/return across both channels.
+- Having the send/return path before the looping delay memory modifies the audio topology of that channel. When this option is turned on, some patches that are possible with the original behavior are not possible anymore, for example patches with two feedback loops using send/return across both channels.
 
 # Installation
 
