@@ -17,7 +17,7 @@ Turning on this behavior means that audio sent to the input of a given channel g
 # Installation
 
 - Download and save [DLD-firmware-v5-send-return-before-loop.wav](http://github.com/thomas-kielbus/DLD-firmware/raw/master/DLD-firmware-v5-send-return-before-loop.wav)
-- Follow manual instructions to update the DLD firmware using the audio bootloader
+- Follow manual instructions to update the DLD's firmware using the audio bootloader
 
 # Uninstallation
 
